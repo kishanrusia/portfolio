@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="contact.css">
+  <title>portfolio</title>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html" class="logo">kishan</a>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    <div class="nav-links" id="navLinks">
+      <div class="close-btn" id="closeBtn">&times;</div>
+      <a href="index.html">photo</a>
+      <a href="about.html">about</a>
+      <a href="contact.html">contact</a>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Left Side (Heading Section) -->
+    <div class="heading-section">
+      <h1>get in touch</h1>
+    </div>
+
+    <!-- Right Side (Contact Form Section) -->
+    <div class="form-section">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="07f01255-83db-46ef-8502-d0715e03e24f">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" placeholder="First Name" name="name" required name="firstName">
+        </div>
+        <div class="form-group">
+          <label for="name"></label>
+          <input type="text" id="name" placeholder="Last Name" name="name" required name="lastName">
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required name="Email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea type="text" id="email" name="message" required name="Message"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-left">
+    <p>Kishan Rusia</p>
+    <a href="https://www.instagram.com/waitsuukee" target="_blank" class="instagram-icon">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+  <div class="footer-right">
+    <p>
+      <a href="tel:+639653440309">📞 +63 965 344 0309</a>
+    </p>
+  </div>
+</footer>
+
+  <!-- JavaScript for Toggle Menu -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    const closeBtn = document.getElementById('closeBtn');
+
+    // Open menu
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.add('active');
+    });
+
+    // Close menu
+    closeBtn.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+    });
+  </script>
+</body>
+</html>
